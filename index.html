@@ -35,8 +35,14 @@
                 font-family: Georgia;
             }
 
-            .border-bottom {
-                border-width:3px !important;
+            #border-navbar {
+                border-width:4px !important;
+                border-color: #cccccc !important;
+            }
+
+            #border-footer {
+                border-width:4px !important;
+                border-color: #4aaaa5 !important; 
             }
 
             .content {
@@ -49,17 +55,35 @@
                 color: #4aaaa5;
             }
 
-            hr {
+            .img-profile{
+                max-height: 20%;
+                max-width: 20%;
+            }
+
+            .text {
+                font-family: Helvetica Neue;
                 color: #777777;
             }
 
+            .copyright {
+                color: #cccccc;
+                background-color: #666666;
+            }
+
+            hr {
+                color: #777777;
+                size: 2px;
+
+            }
+
+
+
         </style>
     </head>
-    <body>
-         <div class="container">
+    <body class="bg">
             <div class="row">
                 <div class="col"> 
-                    <nav class="navbar navbar-light bg-white justify-content-between border-bottom">
+                    <nav id="border-navbar" class="navbar navbar-light bg-white justify-content-between border-bottom">
                         <a class="navbar-brand text-white p-4 pl-5 pr-5 ml-5"><span class="h4 font-weight-bold">Grant Hewlett</span></a>
                         <ul class="navbar-nav d-flex flex-row mr-5">
                             <li class="nav-item p-2">
@@ -75,15 +99,14 @@
                     </nav>
                 </div>
             </div>
-        </div>
         <div class="container">       
-            <div class="row ml-1 mr-1 bg">
+            <div class="row">
                 <div class="col-11 m-5"> 
                     <section class="m-4 content border bg-white">
                         <h4 class="title font-weight-bold p-4 m-1">About Me</h4>
-                        <hr class="m-0 ml-4 mr-4">
-                        <p class="text clearfix">
-                            <img class="img-fluid img-thumbnail float-left" src="./assets/images/profile.jpg">
+                        <hr class="m-0 ml-4 mr-4 border border-secondary">
+                        <p class="text clearfix m-3">
+                            <img class="img-profile float-left m-2" src="./assets/images/profile.jpg">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium lectus quam id leo in vitae turpis massa sed.
                             <br><br>
                             Odio tempor orci dapibus ultrices in iaculis nunc. Massa sapien faucibus et molestie ac feugiat sed lectus. Vestibulum rhoncus est pellentesque elit ullamcorper. At quis risus sed vulputate odio ut. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. At quis risus sed vulputate odio ut. 
@@ -93,8 +116,13 @@
                     </section>
                 </div>
             </div>
-        <footer class="copyright">
-            Copyright &copy;
-        </footer>
+        </div>
+            <div class="row">
+                <div class="col"> 
+                    <footer id="border-footer" class="copyright border-top text-center align-bottom fixed-bottom p-4">
+                        Copyright &copy;
+                    </footer>
+                </div>
+            </div>
     </body>
 </html>
