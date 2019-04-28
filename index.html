@@ -35,7 +35,7 @@
                 font-family: Georgia;
             }
 
-            #border-navbar {
+            .border-navbar {
                 border-width:4px !important;
                 border-color: #cccccc !important;
             }
@@ -75,16 +75,15 @@
                 size: 2px;
 
             }
-
-
-
         </style>
     </head>
     <body class="bg">
             <div class="row">
-                <div class="col"> 
-                    <nav id="border-navbar" class="navbar navbar-light bg-white justify-content-between border-bottom">
-                        <a class="navbar-brand text-white p-4 pl-5 pr-5 ml-5"><span class="h4 font-weight-bold">Grant Hewlett</span></a>
+                <div class="col-1 bg-white border-bottom border-navbar p-0"> 
+                </div>
+                <div class="col-10 p-0">
+                    <nav class="navbar navbar-light bg-white justify-content-between border-bottom border-navbar pb-0">
+                        <a class="navbar-brand text-white p-4 pl-5 pr-5 ml-4"><span class="h4 font-weight-bold">Grant Hewlett</span></a>
                         <ul class="navbar-nav d-flex flex-row mr-5">
                             <li class="nav-item p-2">
                                 <a class="nav-link border-right p-0 pr-4" href="#About">About</a>
@@ -98,14 +97,16 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="col-1 bg-white border-bottom border-navbar p-0"> 
+                </div>
             </div>
         <div class="container">       
             <div class="row">
-                <div class="col-11 m-5"> 
+                <div class="col-12 mt-5"> 
                     <section class="m-4 content border bg-white">
                         <h4 class="title font-weight-bold p-4 m-1">About Me</h4>
                         <hr class="m-0 ml-4 mr-4 border border-secondary">
-                        <p class="text clearfix m-3">
+                        <p class="text m-3">
                             <img class="img-profile float-left m-2" src="./assets/images/profile.jpg">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium lectus quam id leo in vitae turpis massa sed.
                             <br><br>

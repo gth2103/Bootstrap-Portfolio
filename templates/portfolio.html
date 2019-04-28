@@ -1,78 +1,185 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Basic Portfolio
+         <title>
+            Bootstrap Portfolio
         </title>
-        <link rel='stylesheet' type='text/css' href="../assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
+
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+             crossorigin="anonymous">
+         </script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+             crossorigin="anonymous">
+         </script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+             crossorigin="anonymous">
+         </script>
         <style>
+
+            .bg {
+
+                background-image: url('../assets/images/dust_scratches.png'); 
+                background-repeat: no-repeat; 
+                background-size: cover; 
+                background-position: center center;
+            }
+
+            .navbar-brand {
+                background-color: #4aaaa5;
+                font-family: Georgia;
+            }
+
+            .border-navbar {
+                border-width:4px !important;
+                border-color: #cccccc !important;
+            }
+
+            #border-footer {
+                border-width:4px !important;
+                border-color: #4aaaa5 !important; 
+            }
+
+            .content {
+                color: #777777;
+                line-height: 32px;
+            }
+
+            .title {
+                font-family: Georgia;
+                color: #4aaaa5;
+            }
+
+            .img-profile{
+                max-height: 20%;
+                max-width: 20%;
+            }
+
+            .text {
+                font-family: Helvetica Neue;
+                color: #777777;
+            }
+
+            .copyright {
+                color: #cccccc;
+                background-color: #666666;
+            }
+
+            .btn {
+                background-color: #4aaaa5;
+
+            }
+
+            .img-portfolio {
+                max-width: 100%;
+            }
+
+            .label-portfolio {
+                min-width: 100%;
+                background-color: #4aaaa5;
+                font-family: Georgia;
+                top: -40%;
+
+            }
+
+            ::placeholder {
+                color: lightgrey !important;
+                opacity: 1;
+            }
+
+            hr {
+                color: #777777;
+                border-width: 4px !important;
+            }
+
         </style>
     </head>
-    <body>
-        <div class="background">
-            <div id="navbar">
-                <div class="nav-wrapper-pages">
-                    <header class="left">
-                        Grant Hewlett
-                    </header>
-                    <div class="navbar-item">
-                        <a class="navbar-link right" href="./contact.html">Contact</a>
-                    </div>
-                    <div class="navbar-item">
-                        <a class="navbar-link" href="#Portfolio">Portfolio</a>
-                        <div class="seperator"></div>
-                    </div>
-                    <div class="navbar-item">
-                        <a class="active navbar-link" href="../index.html">About</a>
-                        <div class="seperator"></div>
+    <body class="bg">
+            <div class="row">
+                <div class="col-1 bg-white border-bottom border-navbar p-0"> 
+                </div>
+                <div class="col-10 p-0"> 
+                    <nav id="" class="navbar navbar-light bg-white justify-content-between border-bottom border-navbar pb-0">
+                        <a class="navbar-brand text-white p-4 pl-5 pr-5 ml-4"><span class="h4 font-weight-bold">Grant Hewlett</span></a>
+                        <ul class="navbar-nav d-flex flex-row mr-5">
+                            <li class="nav-item p-2">
+                                <a class="nav-link border-right p-0 pr-4" href="../index.html">About</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link border-right p-0 pr-4" href="#Portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link p-0 pr-4" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-1 bg-white border-bottom border-navbar p-0"> 
+                </div>
+            </div>
+            <div class="container mb-5">       
+                <div class="row">
+                    <div class="col-12 mt-5 mb-5"> 
+                        <section class="m-4 content border bg-white">
+                            <h4 class="title font-weight-bold p-4 m-1">Contact</h4>
+                            <hr class="m-0 ml-4 mr-4 border border-secondary">
+                            <div class="container text m-2 mt-4">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-portfolio" src="../assets/images/technics-1.jpg">
+                                        <div class="label-portfolio float-left text-center text-white p-2 position-relative">
+                                            Hangman
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-portfolio" src="../assets/images/technics-2.jpg">
+                                        <div class="label-portfolio float-left text-center text-white p-2 position-relative">
+                                            RPG Game
+                                        </div>
+                                    </div>
+                                    <div class="col-4"></div>  
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-portfolio" src="../assets/images/technics-3.jpg">
+                                        <div class="label-portfolio float-left text-center text-white p-2 position-relative">
+                                            Trivia Game
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="img-portfolio" src="../assets/images/technics-4.jpg">
+                                        <div class="label-portfolio float-left text-center text-white p-2 position-relative">
+                                            Columbia Info Widget
+                                        </div>
+                                    </div>
+                                    <div class="col-4"></div>  
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-portfolio" src="../assets/images/technics-5.jpg">
+                                        <div class="label-portfolio float-left text-center text-white p-2 position-relative">
+                                            Rock Paper Scissors
+                                        </div>
+                                    </div>        
+                                    <div class="col-4"></div>
+                                    <div class="col-4"></div>  
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
-            <section class="content-portfolio clearfix">
-                <h1 class="title">Portfolio</h1>
-                <hr>
-                <p class="text clearfix">
-                    <div class="grid-container">
-                        <div class="grid-item">
-                            <img class="portfolio-image" src="../assets/images/technics-1.jpg">
-                            <div class="portfolio-label clearfix">
-                                Hangman
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <img class="portfolio-image" src="../assets/images/technics-2.jpg">
-                            <div class="portfolio-label clearfix">
-                                RPG Game
-                            </div>
-                        </div>
-                        <div class="grid-item"></div>  
-                        <div class="grid-item">
-                            <img class="portfolio-image" src="../assets/images/technics-3.jpg">
-                            <div class="portfolio-label clearfix">
-                                Trivia Game
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <img class="portfolio-image" src="../assets/images/technics-4.jpg">
-                            <div class="portfolio-label clearfix">
-                                Columbia Info Widget
-                            </div>
-                        </div>
-                        <div class="grid-item"></div>  
-                        <div class="grid-item">
-                            <img class="portfolio-image" src="../assets/images/technics-5.jpg">
-                            <div class="portfolio-label clearfix">
-                                Rock Paper Scissors
-                            </div>
-                        </div>
-                        <div class="grid-item"></div>
-                        <div class="grid-item"></div>  
-                    </div>
-                </p> 
-            </section>
-          </div>
-        <footer class="copyright">
-            Copyright &copy;
-        </footer>
+            <div class="row">
+                <div class="col"> 
+                    <footer id="border-footer" class="copyright border-top text-center align-bottom fixed-bottom p-4">
+                        Copyright &copy;
+                    </footer>
+                </div>
+            </div>
     </body>
 </html>
